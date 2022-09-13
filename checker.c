@@ -71,7 +71,7 @@ i++;
 }
 for (; string[i] != '\0'; i++)
 result = result * 10 + string[i] - '0';
-return (sign * result);
+return (sign *result);
 }
 /**
 * _is_digit - is the char digit

@@ -53,7 +53,7 @@ return (1);
 * environmentsetunset - set and unset environment
 * @argv_here: takes arguments
 * and check using _strcmp if it is equivalent
-* to setenv or unset env in which case it call the 
+* to setenv or unset env in which case it call the
 * function setenv or unsetenv and sets or unsets env
 * Return: 0 if argv_here[0]is either setenv or unsetenv
 * otherwise (-1) if argv_here[0] is something else
@@ -118,7 +118,7 @@ else if (_strcmp(argv_here[0], "cd") == 0)
 change_directory(argv_here, copy_PWD);
 else if (checkifechocommand(argv_here) == 0)
 echo_commands(argv_here, status);
-else if ((j = checkifexit(argv_here)) > (-1))
+else if ((j == checkifexit(argv_here)) > (-1))
 {
 m = exittypes(argv_here, status, j);
 free(buffercopy);
