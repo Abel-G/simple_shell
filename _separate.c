@@ -12,7 +12,7 @@ char *piece = strtok(string, " ");
 while (piece != NULL)
 {
 *temp++ = piece;
-piece = strtok(NULL, " ");
+piece = _strtok(NULL, " ");
 }
 }
 /**
