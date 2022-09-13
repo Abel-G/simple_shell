@@ -35,5 +35,6 @@ int _dollar_checker(char *f_char);
 void _iota(int value, char *numberArray);
 int _atoi(char *string);
 int _is_digit(char *string);
+char *_strtok(char *line, char *delim)
 #endif /* MAIN_FUNCTION_SIMPLE_SHELL_H */
 
