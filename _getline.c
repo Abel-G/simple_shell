@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * mygetline_fn - replica of getline function
- * @buffer : store results in
- * Return: The line it got from the stdin
- */
+* mygetline_fn - replica of getline function
+* @buffer : store results in
+* Return: The line it got from the stdin
+*/
 void mygetline_fn(char *buffer)
 {
 int rd;
