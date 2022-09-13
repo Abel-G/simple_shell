@@ -8,7 +8,7 @@
 void separator_getline(char *argv[], char *string)
 {
 char **temp = argv;
-char *piece = strtok(string, " ");
+char *piece = _strtok(string, " ");
 while (piece != NULL)
 {
 *temp++ = piece;
@@ -26,10 +26,10 @@ piece = _strtok(NULL, " ");
 void separator_PATH(char *list[], char *path)
 {
 char **temp = list;
-char *piece = strtok(path, ":");
+char *piece = _strtok(path, ":");
 while (piece != NULL)
 {
 *temp++ = piece;
-piece = strtok(NULL, ":");
+piece = _strtok(NULL, ":");
 }
 }
